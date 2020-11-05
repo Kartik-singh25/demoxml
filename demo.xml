@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
-    <to>KARAN</to>
-    <from>abhishek</from>
-    <heading>reminder</heading>
-    <body>this is important</body>
+    <articles>The &lt;article&gt; element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</articles>
+    <details>Defines additional details that the user can view or hide</detailss>
+    <asides>The &lt;aside&gt; element defines some content aside from the content it is placed in (like a sidebar).
+
+The &lt;aside&gt; content should be indirectly related to the surrounding content.</asides>
+    <figures>The &lt;figure&gt; tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</figures>
+    <footers>The &lt;footer&gt; element defines a footer for a document or section.
+
+A &lt;footer&gt; element typically contains:<br>
+
+authorship information<br>
+copyright information<br>
+contact information<br>
+sitemap<br>
+back to top links<br>
+related documents</footers>
+    <headers>The &lt;header&gt; element represents a container for introductory content or a set of navigational links.</headers>
+    <mains>The content inside the &lt;main&gt; element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.</mains>
+
+    
 </note>

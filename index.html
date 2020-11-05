@@ -3,11 +3,15 @@
 
 <body>
   <p> Below is an example of XML</p>
-  <div>
+  <div style="font-size: 20px;">
   	<h1>Semantic Tags</h1>
-    <b></b><span id="to"></span><br>
-    <b>from:</b><span id="from"></span><br>
-    <b>message:</b><span id="message"></span><br>
+    <b>&lt;article&gt;&nbsp;&nbsp;&nbsp;-></b><span id="article"></span><br>
+    <b>&lt;details&gt;&nbsp;&nbsp;&nbsp;-></b><span id="details"></span><br>
+    <b>&lt;aside&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="aside"></span><br>
+    <b>&lt;figure&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="figure"></span><br>
+    <b>&lt;footer&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="footer"></span><br>
+    <b>&lt;header&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="header"></span><br>
+    <b>&lt;main&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="main"></span><br>
   </div>
   <script>
     if (window.XMLHttpRequest) {
@@ -19,9 +23,14 @@
     xmlhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         xmlDoc = xmlhttp.responseXML;
-        document.getElementById("to").innerHTML = xmlDoc.getElementsByTagName("to")[0].childNodes[0].nodeValue;
-        document.getElementById("from").innerHTML = xmlDoc.getElementsByTagName("from")[0].childNodes[0].nodeValue;
-        document.getElementById("message").innerHTML = xmlDoc.getElementsByTagName("body")[0].childNodes[0].nodeValue;
+        document.getElementById("article").innerHTML = xmlDoc.getElementsByTagName("articles")[0].childNodes[0].nodeValue;
+        document.getElementById("details").innerHTML = xmlDoc.getElementsByTagName("detailss")[0].childNodes[0].nodeValue;
+        document.getElementById("aside").innerHTML = xmlDoc.getElementsByTagName("asides")[0].childNodes[0].nodeValue;
+        document.getElementById("figure").innerHTML = xmlDoc.getElementsByTagName("figures")[0].childNodes[0].nodeValue;
+        document.getElementById("footer").innerHTML = xmlDoc.getElementsByTagName("footers")[0].childNodes[0].nodeValue;
+        document.getElementById("header").innerHTML = xmlDoc.getElementsByTagName("headers")[0].childNodes[0].nodeValue;
+        document.getElementById("main").innerHTML = xmlDoc.getElementsByTagName("mains")[0].childNodes[0].nodeValue;
+        
       }
     };
     xmlhttp.open("GET", "demo.xml", true);
