@@ -5,13 +5,13 @@
   <p> Below is an example of XML</p>
   <div style="font-size: 20px;">
   	<h1>Semantic Tags</h1>
-    <b>&lt;article&gt;&nbsp;&nbsp;&nbsp;-></b><span id="articles"></span><br>
-    <b>&lt;details&gt;&nbsp;&nbsp;&nbsp;-></b><span id="detailss"></span><br>
-    <b>&lt;aside&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="asides"></span><br>
-    <b>&lt;figure&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="figures"></span><br>
-    <b>&lt;footer&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="footers"></span><br>
-    <b>&lt;header&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="headers"></span><br>
-    <b>&lt;main&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="mains"></span><br>
+    <b>&lt;article&gt;&nbsp;&nbsp;&nbsp;-></b><span id="art"></span><br>
+    <b>&lt;details&gt;&nbsp;&nbsp;&nbsp;-></b><span id="det"></span><br>
+    <b>&lt;aside&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="asi"></span><br>
+    <b>&lt;figure&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="fig"></span><br>
+    <b>&lt;footer&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="foot"></span><br>
+    <b>&lt;header&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="head"></span><br>
+    <b>&lt;main&gt;&nbsp;&nbsp;&nbsp;-> </b><span id="ma"></span><br>
   </div>
   <script>
     if (window.XMLHttpRequest) {
@@ -23,13 +23,13 @@
     xmlhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         xmlDoc = xmlhttp.responseXML;
-        document.getElementById("articles").innerHTML = xmlDoc.getElementsByTagName("art")[0].childNodes[0].nodeValue;
-        document.getElementById("detailss").innerHTML = xmlDoc.getElementsByTagName("det")[0].childNodes[0].nodeValue;
-        document.getElementById("asides").innerHTML = xmlDoc.getElementsByTagName("asi")[0].childNodes[0].nodeValue;
-        document.getElementById("figures").innerHTML = xmlDoc.getElementsByTagName("fig")[0].childNodes[0].nodeValue;
-        document.getElementById("footers").innerHTML = xmlDoc.getElementsByTagName("foot")[0].childNodes[0].nodeValue;
-        document.getElementById("headers").innerHTML = xmlDoc.getElementsByTagName("head")[0].childNodes[0].nodeValue;
-        document.getElementById("mains").innerHTML = xmlDoc.getElementsByTagName("ma")[0].childNodes[0].nodeValue;
+        document.getElementById("art").innerHTML = xmlDoc.getElementsByTagName("art")[0].childNodes[0].nodeValue;
+        document.getElementById("det").innerHTML = xmlDoc.getElementsByTagName("det")[0].childNodes[0].nodeValue;
+        document.getElementById("asi").innerHTML = xmlDoc.getElementsByTagName("asi")[0].childNodes[0].nodeValue;
+        document.getElementById("fig").innerHTML = xmlDoc.getElementsByTagName("fig")[0].childNodes[0].nodeValue;
+        document.getElementById("foot").innerHTML = xmlDoc.getElementsByTagName("foot")[0].childNodes[0].nodeValue;
+        document.getElementById("head").innerHTML = xmlDoc.getElementsByTagName("head")[0].childNodes[0].nodeValue;
+        document.getElementById("ma").innerHTML = xmlDoc.getElementsByTagName("ma")[0].childNodes[0].nodeValue;
         
       }
     };

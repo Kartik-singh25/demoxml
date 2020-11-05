@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
-    <art>The  element specifies independent, self-contained content.
-
-An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</art>
+    <art>The  element specifies independent, self-contained content.An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.</art>
     <det>Defines additional details that the user can view or hide</det>
-    <asi>The  element defines some content aside from the content it is placed in (like a sidebar).
-
-The content should be indirectly related to the surrounding content.</asi>
+    <asi>The  element defines some content aside from the content it is placed in (like a sidebar).The content should be indirectly related to the surrounding content.</asi>
     <fig>The tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</fig>
     <foot>The element defines a footer for a document or section.</foot>
     <head>The &lt;header&gt; element represents a container for introductory content or a set of navigational links.</head>
