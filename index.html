@@ -23,13 +23,13 @@
     xmlhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         xmlDoc = xmlhttp.responseXML;
-        document.getElementById("articles").innerHTML = xmlDoc.getElementsByTagName("articles")[0].childNodes[0].nodeValue;
-        document.getElementById("detailss").innerHTML = xmlDoc.getElementsByTagName("detailss")[0].childNodes[0].nodeValue;
-        document.getElementById("asides").innerHTML = xmlDoc.getElementsByTagName("asides")[0].childNodes[0].nodeValue;
-        document.getElementById("figures").innerHTML = xmlDoc.getElementsByTagName("figures")[0].childNodes[0].nodeValue;
-        document.getElementById("footers").innerHTML = xmlDoc.getElementsByTagName("footers")[0].childNodes[0].nodeValue;
-        document.getElementById("headers").innerHTML = xmlDoc.getElementsByTagName("headers")[0].childNodes[0].nodeValue;
-        document.getElementById("mains").innerHTML = xmlDoc.getElementsByTagName("mains")[0].childNodes[0].nodeValue;
+        document.getElementById("articles").innerHTML = xmlDoc.getElementsByTagName("art")[0].childNodes[0].nodeValue;
+        document.getElementById("detailss").innerHTML = xmlDoc.getElementsByTagName("det")[0].childNodes[0].nodeValue;
+        document.getElementById("asides").innerHTML = xmlDoc.getElementsByTagName("asi")[0].childNodes[0].nodeValue;
+        document.getElementById("figures").innerHTML = xmlDoc.getElementsByTagName("fig")[0].childNodes[0].nodeValue;
+        document.getElementById("footers").innerHTML = xmlDoc.getElementsByTagName("foot")[0].childNodes[0].nodeValue;
+        document.getElementById("headers").innerHTML = xmlDoc.getElementsByTagName("head")[0].childNodes[0].nodeValue;
+        document.getElementById("mains").innerHTML = xmlDoc.getElementsByTagName("ma")[0].childNodes[0].nodeValue;
         
       }
     };
